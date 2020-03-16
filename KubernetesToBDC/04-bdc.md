@@ -1,4 +1,4 @@
-![](https://github.com/microsoft/sqlworkshops/blob/master/graphics/microsoftlogo.png?raw=true)
+![](https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/microsoftlogo.png?raw=true)
 
 # Workshop: Kubernetes - From Bare Metal to SQL Server Big Data Clusters
 
@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"> 04 - SQL Server Big Data Clusters Architecture </h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/textbubble.png?raw=true"> 04 - SQL Server Big Data Clusters Architecture </h2>
 
 In this workshop you have covered creating and maintaining a Kubernetes Cluster. The end of this Module contains several helpful references you can use in these exercises and in production.
 
@@ -14,7 +14,7 @@ This module covers running Microsoft's Big Data Clusters on a Kubernetes Cluster
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true">4.1 SQL Server Big Data Clusters Capabilities</h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true">4.1 SQL Server Big Data Clusters Capabilities</h2>
 
 
 SQL Server (starting with version 2019) provides three ways to work with large sets of data:
@@ -30,7 +30,7 @@ Each of these functions are available separately based on the requirements of yo
 In both a Stand-Alone Instance configuration and within the BDC (BDC) configuration, you can use a series of *Connectors* to query data using the <a href="https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-ver15" target="_blank"><i>PolyBase</i></a> feature. PolyBase enables your SQL Server instance to process Transact-SQL queries that read data from external data sources. Starting in SQL Server 2019, you can access external data in Hadoop, Azure Blob Storage and also external data in SQL Server, Oracle, Teradata, and MongoDB. PolyBase pushes as much of the query predicate as possible to the source system, which optimizes the query.
 
 <br>
-<img style="height: 300; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/sqlserver2019bigdataclusters/graphics/datavirtualization1.png?raw=true">
+<img style="height: 300; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/sqlserver2019bigdataclusters/graphics/datavirtualization1.png?raw=true">
 <br>
 
 To leverage PolyBase, you first define the external table using a specific set of statements, then configure the connection and security, and then use standard Transact-SQL statements work with the data as if it were an standard SQL Server table. The components used in this configuration are as Follows:
@@ -45,12 +45,12 @@ To leverage PolyBase, you first define the external table using a specific set o
 </table>
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Review PolyBase Solution</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Review PolyBase Solution</b></p>
 
 In this section you will review a solution tutorial similar to one you will perform later. You'll see how to create a reference to an HDFS file store and query it within SQL Server as if it were a standard internal table.
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sqlallproducts-allversions" target="_blank">this reference and locate numbers 4-5 of the steps in the tutorial</a>. This explains the two steps required to create and query an External table. *Only review this information; you will perform these steps in another Module*.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sqlallproducts-allversions" target="_blank">this reference and locate numbers 4-5 of the steps in the tutorial</a>. This explains the two steps required to create and query an External table. *Only review this information; you will perform these steps in another Module*.</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -61,7 +61,7 @@ In this section you will review a solution tutorial similar to one you will perf
 The Big Data capabilities for SQL Server can be used in a stand-alone Instance by leveraging the Data Virtualization feature described above. To perform scale-out Big Data, SQL Server implements a big data cluster by leveraging Kubernetes with several other components. 
 
 <br>
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/sqlserver2019bigdataclusters/graphics/bdc.png?raw=true">
+<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/sqlserver2019bigdataclusters/graphics/bdc.png?raw=true">
 <br>
 
 The BDC can be deployed to three environments:
@@ -161,7 +161,7 @@ These components are used in the Compute Pool of the BDC:
 The Data Pool in a BDC consists of one or more SQL Server data pool instances. SQL data pool instances provide persistent SQL Server storage for the cluster. A data pool is used to ingest data from SQL queries or Spark jobs, or other locations. To provide better performance across large data sets, data in a data pool is distributed into shards across the member SQL data pool instances.
 
 <br>
-<img style="height: 200; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/sqlserver2019bigdataclusters/graphics/datamart1.png?raw=true">
+<img style="height: 200; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/sqlserver2019bigdataclusters/graphics/datamart1.png?raw=true">
 <br>
 
 These components are used in the Data Pool of the BDC:
@@ -193,18 +193,18 @@ These components are used in the Storage Pool of the BDC:
 </table>
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Review Data Pool Solution</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Review Data Pool Solution</b></p>
 
 In this section you will review the solution tutorial similar to the one you will perform in a future step. You'll see how to load data into the Data Pool.
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-sql?view=sqlallproducts-allversions" target="_blank">this reference and review the steps in the tutorial</a>. This explains the two steps required to create and load an External table in the Data Pool. You'll perform these steps in the <i>Operationalization</i> Module later. *Only review this information at this time. You will perform these steps in another Module.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-sql?view=sqlallproducts-allversions" target="_blank">this reference and review the steps in the tutorial</a>. This explains the two steps required to create and load an External table in the Data Pool. You'll perform these steps in the <i>Operationalization</i> Module later. *Only review this information at this time. You will perform these steps in another Module.</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
 
-<p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/owl.png?raw=true"><b>For Further Study</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/owl.png?raw=true"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/big-data-cluster-overview?view=sqlallproducts-allversions" target="_blank">Official Documentation for this section</a></li>
 		<li><a href = "https://cloudblogs.microsoft.com/sqlserver/2018/09/26/sql-server-2019-celebrating-25-years-of-sql-server-database-engine-and-the-path-forward/" target="_blank">Update on 2019 Blog</a></li>
@@ -215,6 +215,6 @@ In this section you will review the solution tutorial similar to the one you wil
 		<li><a href = "https://www.dataonstorage.com/resource/video/msignite2018/brk4021-deep-dive-on-sql-server-and-big-data/" target="_blank">Session on Big Data at at Ignite</a></li> 
 </ul>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b >Next Steps</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/geopin.png?raw=true"><b >Next Steps</b></p>
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops/blob/master/k8stobdc/KubernetesToBDC/05-datascience.md" target="_blank"><i> Module 5 - Data Science</i></a>.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/KubernetesToBDC/05-datascience.md" target="_blank"><i> Module 5 - Data Science</i></a>.
