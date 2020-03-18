@@ -25,7 +25,7 @@ This module covers a complete workflow for this environment, focusing on a Data 
 WWI has now added web and mobile commerce to their platform, which has generated a significant amount of additional data, and data formats. These new platforms were added without integrating into the OLTP system data or Business Intelligence infrastructures. As a result, "silos" of data stores have developed, and ingesting all of this data exceeds the scale of their current RDBMS server:
 
 <br>
-<img style="height: 300; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/WWI-003.png?raw=true">
+<img style="height: 300; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/WWI-003.png?raw=true">
 <br>
 
 This presented the following four challenges - the IT team at WWI needs to:
@@ -46,7 +46,7 @@ To meet these challenges, the following solution is proposed. Using the BDC plat
 The following diagram illustrates the complete solution that you can use to brief your audience with: 
 
 <br>
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/bdcsolution1.png?raw=true">
+<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bdcsolution1.png?raw=true">
 <br>
 
 In the following sections you'll dive deeper into how this scale is used to solve the rest of the challenges.
@@ -60,7 +60,7 @@ The next challenge the IT team must solve is to enable a single data query to wo
 Using the Data Virtualization capability you saw in the <i>02 - SQL Server BDC Components</i> Module, the IT team creates External Tables using the PolyBase feature. These External Table definitions are stored in the database on the SQL Server Master Instance within the cluster. When queried by the user, the queries are engaged from the SQL Server Master Instance through the Compute Pool in the SQL Server BDC, which holds Kubernetes Nodes containing the Pods running SQL Server Instances. These Instances send the query to the PolyBase Connector at the target data system, which processes the query based on the type of target system. The results are processed and returned through the PolyBase Connector to the Compute Pool and then on to the Master Instance, and then on to the user.
 
 <br>
-<img style="height: 250; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/bdcsolution2.png?raw=true">
+<img style="height: 250; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bdcsolution2.png?raw=true">
 <br>
 
 This process allows not only a query to disparate systems, but also those remote systems can hold extremely large sets of data. Normally you are querying a subset of that data, so the results are all that are sent back over the network. These results can be joined with internal tables for a single view, and all from within the same Transact-SQL statements. 
@@ -84,7 +84,7 @@ In this activity, you will load the sample data into your big data cluster envir
 Ad-hoc queries are very useful for many scenarios. There are times when you would like to bring the data into storage, so that you can create denormalized representations of datasets, aggregated data, and other purpose-specific data tasks. 
 
 <br>
-<img style="height: 250; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/bdcsolution3.png?raw=true">
+<img style="height: 250; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bdcsolution3.png?raw=true">
 <br>
 
 Using the Data Virtualization capability you saw in the <i>02 - BDC Components</i> Module, the IT team creates External Tables using PolyBase statements. These External Table definitions are stored in the database on the SQL Server Master Instance within the cluster. When queried by the user, the queries are engaged from the SQL Server Master Instance through the Compute Pool in the SQL Server BDC, which holds Kubernetes Nodes containing the Pods running SQL Server Instances. These Instances send the query to the PolyBase Connector at the target data system, which processes the query based on the type of target system. The results are processed and returned through the PolyBase Connector to the Compute Pool and then on to the Master Instance, and the PolyBase statements can specify the target of the Data Pool. The SQL Server Instances in the Data Pool store the data in a distributed fashion across multiple databases, called <i>Shards</i>.
@@ -107,7 +107,7 @@ There are three primary uses for a large cluster of data processing systems for 
 The SQL Server Master Instance in the BDC installs with <a href="https://docs.microsoft.com/en-us/sql/advanced-analytics/what-is-sql-server-machine-learning?view=sql-server-ver15" target="_blank">Machine Learning Services</a>, which allow creation, training, evaluation and persisting of Machine Learning Models. Data from all parts of the BDC are available, and Data Science oriented languages and libraries in R, Python and Java are enabled. In this scenario, the Data Scientist creates the R or Python code, and the Transact-SQL Developer wraps that code in a Stored Procedure. This code can be used to train, evaluate and create Machine Learning Models. The Models can be stored in the Master Instance for scoring, or sent on to the App Pool where the Machine Learning Server is running, waiting to accept REST-based calls from applications.
 
 <br>
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/bdcsolution4.png?raw=true">
+<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/bdcsolution4.png?raw=true">
 <br>
 
 The Data Scientist has another option to create and train ML and AI models. The Spark platform within the Storage Pool is accessible through the Knox gateway, using Livy to send Spark Jobs as you learned about in the <i>02 - SQL Server BDC Components</i> Module. This gives access to the full Spark platform, using Jupyter Notebooks (included in <i>Azure Data Studio</i>) or any other standard tools that can access Spark through REST calls. 
