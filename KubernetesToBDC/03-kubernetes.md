@@ -236,7 +236,7 @@ We'll begin with a set of definitions. These aren't all the terms used in Kubern
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true">3.1 Kubernetes Interfaces</h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true">3.1 Kubernetes Interfaces</h2>
 
 "North-south" traffic (meaning interacting with the system) between a Kubernetes Cluster and the outside is made via the Kubernetes API server. There are a number of standard client tools for administering and using a Kubernetes Cluster: 
 
@@ -247,7 +247,7 @@ We'll begin with a set of definitions. These aren't all the terms used in Kubern
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true">3.2 Deploying a Cluster</h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true">3.2 Deploying a Cluster</h2>
 
 ### 3.2.1 Control Plane ###
 

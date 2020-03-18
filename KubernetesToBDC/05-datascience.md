@@ -14,7 +14,7 @@ This module covers a complete workflow for this environment, focusing on a Data 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="4-0">4.0 End-To-End Solution with BDC</a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="4-0">4.0 End-To-End Solution with BDC</a></h2>
 
  <a href="https://azure-scenarios-experience.azurewebsites.net/big-data.html" target="_blank">Wide World Importers </a> (WWI) is a traditional brick and mortar business with a long track record of success, generating profits through strong retail store sales of their unique offering of affordable products from around the world. They have a traditional N-tier application that uses a front-end (mobile, web and installed) that interacts with a scale-out middle-tier software product, which in turn stores data in a large SQL Server database that has been scaled-up to meet demand.  
 
@@ -53,7 +53,7 @@ In the following sections you'll dive deeper into how this scale is used to solv
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="4-1">4.1 Data Virtualization - <i>Challenge 2: Multiple Data Sources</i></a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="4-1">4.1 Data Virtualization - <i>Challenge 2: Multiple Data Sources</i></a></h2>
 
 The next challenge the IT team must solve is to enable a single data query to work across multiple disparate systems, optionally joining to internal SQL Server Tables, and also at scale. 
 
@@ -79,7 +79,7 @@ In this activity, you will load the sample data into your big data cluster envir
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="4-2">4.2 Creating a Distributed Data solution using big data cluster - <i>Challenge 3: Deep Analytics</i></a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="4-2">4.2 Creating a Distributed Data solution using big data cluster - <i>Challenge 3: Deep Analytics</i></a></h2>
 
 Ad-hoc queries are very useful for many scenarios. There are times when you would like to bring the data into storage, so that you can create denormalized representations of datasets, aggregated data, and other purpose-specific data tasks. 
 
@@ -100,7 +100,7 @@ In this activity, you will load the sample data into your big data cluster envir
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="4-3">4.3 Querying HDFS Data using big data cluster - <i>Challenge 4: Enable AI</i></a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="4-3">4.3 Querying HDFS Data using big data cluster - <i>Challenge 4: Enable AI</i></a></h2>
 
 There are three primary uses for a large cluster of data processing systems for Machine Learning and AI applications. The first is that the users will involved in the creation of the <a href="https://www.codeingschool.com/2018/09/what-are-features-and-labels-in-machine-learning.html" target="_blank">Features used in various ML and AI algorithms, and are often tasked to Label</a> the data. These users can access the Data Pool and Data Storage data stores directly to query and assist with this task. 
 

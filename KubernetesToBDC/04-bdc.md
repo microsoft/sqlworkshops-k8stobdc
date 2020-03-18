@@ -14,7 +14,7 @@ This module covers running Microsoft's Big Data Clusters on a Kubernetes Cluster
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true">4.1 SQL Server Big Data Clusters Capabilities</h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true">4.1 SQL Server Big Data Clusters Capabilities</h2>
 
 
 SQL Server (starting with version 2019) provides three ways to work with large sets of data:

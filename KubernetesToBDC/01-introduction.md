@@ -16,7 +16,7 @@ You may now start the Virtual Machine you created in the pre-requisites. You wil
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="1-3">1.1 Big Data Technologies: Operating Systems</a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="1-3">1.1 Big Data Technologies: Operating Systems</a></h2>
 
 In this section you will learn more about the design the primary operating system (Linux) used with a Kubernetes Cluster. 
 
@@ -130,7 +130,7 @@ A <a href="https://opensourceforu.com/2016/07/introduction-linux-system-administ
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="1-4">1.2 Big Data Technologies: Containers and Controllers</a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="1-4">1.2 Big Data Technologies: Containers and Controllers</a></h2>
 
 Bare-metal installations of an operating system such as Windows are deployed on hardware using a <i>Kernel</i>, and additional software to bring all of the hardware into a set of calls. 
 
@@ -204,7 +204,7 @@ To practice with Kubernetes, you will use an online emulator to work with the `m
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="1-5">1.3 Big Data Technologies: Distributed Data Storage</a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="1-5">1.3 Big Data Technologies: Distributed Data Storage</a></h2>
 
 Traditional storage uses a call from the operating system to an underlying I/O system, as you learned earlier. These file systems are either directly connected to the operating system or appear to be connected directly using a Storage Area Network. The blocks of data are stored and managed by the operating system. 
 
@@ -224,7 +224,7 @@ You <a href="https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Introduction
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/pencil2.png?raw=true"><a name="1-6">1.4 Big Data Technologies: Command and Control</a></h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/pencil2.png?raw=true"><a name="1-6">1.4 Big Data Technologies: Command and Control</a></h2>
 
 There are three primary tools and utilities you will use to control the SQL Server big data cluster:
 
