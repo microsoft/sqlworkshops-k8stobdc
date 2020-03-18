@@ -527,7 +527,7 @@ In this activity we will deploy a storage plugin using Helm, this activity will 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkmark.png?raw=true"><b>Steps</b></p>
 
-For this exercise we'll [refer back to the steps in section 2.4 - your instructor will review this section with you](https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/KubernetesToBDC/02-hardware.md).
+For this exercise we'll [refer back to the steps in section 2.4 - your instructor will review this section with you](https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/KubernetesToBDC/02-hardware.md).
 
 ## 3.3 OpenShift Container Platform - A Commercially Supported Kubernetes ##
 
@@ -824,7 +824,7 @@ Your requirements should include these considerations along with other factors u
 
 In this activity you will explore more on the Persistent Storage Classes you created in Module 2. 
 
-1. [Review the plugin instructions in Module 2](https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/KubernetesToBDC/02-hardware.md) in order to install the Kubernetes storage plugin.
+1. [Review the plugin instructions in Module 2](https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/KubernetesToBDC/02-hardware.md) in order to install the Kubernetes storage plugin.
 2. A `test-pvc.yaml` file should be present in the home directory of the sandbox environment. The contents of the file should be as follows:
 
 ```
@@ -1077,4 +1077,4 @@ The status of each Persistent Volume Claim associated with the big Cluster names
 kubectl get pvc -n mssql-Cluster
 ```
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/KubernetesToBDC/04-bdc.md" target="_blank"><i> Module 4 - SQL Server big data clusters</i></a>.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/KubernetesToBDC/04-bdc.md" target="_blank"><i> Module 4 - SQL Server big data clusters</i></a>.

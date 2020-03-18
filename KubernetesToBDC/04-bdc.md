@@ -204,7 +204,7 @@ In this section you will review the solution tutorial similar to the one you wil
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
 
-<p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/owl.png?raw=true"><b>For Further Study</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/owl.png?raw=true"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/big-data-cluster-overview?view=sqlallproducts-allversions" target="_blank">Official Documentation for this section</a></li>
 		<li><a href = "https://cloudblogs.microsoft.com/sqlserver/2018/09/26/sql-server-2019-celebrating-25-years-of-sql-server-database-engine-and-the-path-forward/" target="_blank">Update on 2019 Blog</a></li>
@@ -215,6 +215,6 @@ In this section you will review the solution tutorial similar to the one you wil
 		<li><a href = "https://www.dataonstorage.com/resource/video/msignite2018/brk4021-deep-dive-on-sql-server-and-big-data/" target="_blank">Session on Big Data at at Ignite</a></li> 
 </ul>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/geopin.png?raw=true"><b >Next Steps</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b >Next Steps</b></p>
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/KubernetesToBDC/05-datascience.md" target="_blank"><i> Module 5 - Data Science</i></a>.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/KubernetesToBDC/05-datascience.md" target="_blank"><i> Module 5 - Data Science</i></a>.

@@ -179,13 +179,13 @@ When the class is complete, you can remove your environment so that you are no l
 
 >Note: If you are using a Virtual Machine in Azure, power off the Virtual Machine using the Azure Portal every time you are done with it. Turning off the VM using just the Linux shutdown command in the VM only stops it running, but you are still charged for the VM if you do not stop it from the Portal. Stop (de-allocate) the VM from the Portal unless you are actively using it.
 
-<p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/owl.png?raw=true"><b>For Further Study</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/owl.png?raw=true"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/deployment-script-single-node-kubeadm?view=sql-server-ver15" target="_blank">This Notebook uses the script located here</a>, and that reference supersedes the information in the steps listed above.</li> 
     <li><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy?view=sql-server-ver15" target="_blank">You can also create a SQL Server Big Data Cluster on the Azure Kubernetes Service (AKS) using these instructions</a>.</li>
     <li><a href="https://github.com/microsoft/sqlworkshops-k8stobdc/tree/master/sqlserver2019bigdataclusters" target="_blank">For a complete workshop on SQL Server 2019's big data clusters, see this reference</a>.</li>
 </ul>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/geopin.png?raw=true"><b >Next Steps</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/geopin.png?raw=true"><b >Next Steps</b></p>
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/KubernetesToBDC/01-introduction.md" target="_blank"><i> Module 1 - Introduction</i></a>.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/KubernetesToBDC/01-introduction.md" target="_blank"><i> Module 1 - Introduction</i></a>.
