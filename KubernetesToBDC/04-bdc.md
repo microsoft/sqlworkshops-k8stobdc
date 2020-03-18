@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/textbubble.png?raw=true"> 04 - SQL Server Big Data Clusters Architecture </h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"> 04 - SQL Server Big Data Clusters Architecture </h2>
 
 In this workshop you have covered creating and maintaining a Kubernetes Cluster. The end of this Module contains several helpful references you can use in these exercises and in production.
 
@@ -45,12 +45,12 @@ To leverage PolyBase, you first define the external table using a specific set o
 </table>
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Review PolyBase Solution</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Review PolyBase Solution</b></p>
 
 In this section you will review a solution tutorial similar to one you will perform later. You'll see how to create a reference to an HDFS file store and query it within SQL Server as if it were a standard internal table.
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sqlallproducts-allversions" target="_blank">this reference and locate numbers 4-5 of the steps in the tutorial</a>. This explains the two steps required to create and query an External table. *Only review this information; you will perform these steps in another Module*.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sqlallproducts-allversions" target="_blank">this reference and locate numbers 4-5 of the steps in the tutorial</a>. This explains the two steps required to create and query an External table. *Only review this information; you will perform these steps in another Module*.</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -193,12 +193,12 @@ These components are used in the Storage Pool of the BDC:
 </table>
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Review Data Pool Solution</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Review Data Pool Solution</b></p>
 
 In this section you will review the solution tutorial similar to the one you will perform in a future step. You'll see how to load data into the Data Pool.
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-sql?view=sqlallproducts-allversions" target="_blank">this reference and review the steps in the tutorial</a>. This explains the two steps required to create and load an External table in the Data Pool. You'll perform these steps in the <i>Operationalization</i> Module later. *Only review this information at this time. You will perform these steps in another Module.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Open <a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-sql?view=sqlallproducts-allversions" target="_blank">this reference and review the steps in the tutorial</a>. This explains the two steps required to create and load an External table in the Data Pool. You'll perform these steps in the <i>Operationalization</i> Module later. *Only review this information at this time. You will perform these steps in another Module.</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>

@@ -29,7 +29,7 @@ In this instructor-led session, the hardware for the hands on lab exercises cons
 
 <img style="width=80; float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/graphics/2_2_1_workshop_hw.PNG?raw=true">
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Basic Sandbox Environment Familiarization</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Basic Sandbox Environment Familiarization</b></p>
 
 1. Connect to your sandbox environment using a ssh client. Apple and Linux systems come with a built in client, as does the latest Windows operating system. You may also wish to use the graphical [Putty](https://www.putty.org/) tool. Your workshops tutors will make login credentials available to each attendee.
 
@@ -218,7 +218,7 @@ sysctl net.bridge.bridge-nf-call-iptables=1
 
 In this instructor-led workshop, Storage Orchestration is facilitated via the [Pure Service Orchestrator](https://github.com/purestorage/helm-charts/blob/master/pure-k8s-plugin/README.md). This component is a [Kubernetes Container Storage Interface-compliant plugin](https://github.com/container-storage-interface/spec) that automatically provisions storage across one or more Pure Storage FlashArray™ and / or FlashBlade™ storage arrays. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Installing The Storage Plugin </b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Installing The Storage Plugin </b></p>
 
 The activity covers the installation of a Container Storage Interface compliant Kubernetes storage plugin using [Helm](https://helm.sh/). 
 

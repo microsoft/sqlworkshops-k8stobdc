@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/textbubble.png?raw=true"> 03 - Kubernetes Concepts and Implementation </h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"> 03 - Kubernetes Concepts and Implementation </h2>
 
 In this workshop you have covered the hardware and software environment for Kubernetes. You've learned about Linux, Containers, and a quick overview of Kubernetes. With all that in place, in the previous Module you set up your environment to install Kubernetes. We didn't cover the terms you used to define and deploy your Cluster.  
 
@@ -271,7 +271,7 @@ Consideration needs to be made for upgrading a Kubernetes Cluster from one versi
 - **Create a new Cluster**
   In this case, you can create a new Cluster, deploy a big data Cluster to it, and then restore a backup of the data from the original Cluster. This approach requires more hardware than the upgrade method. If the upgrade spans multiple versions of Kubernetes - for example, the upgrade is from version 1.15 to 1.17 - this method allows a 1.17 Cluster to be created from scratch cleanly and then the data from 1.15 Cluster restored onto the new 1.17 Cluster.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: An Introduction To The Workshop Sandbox Environment (Optional)</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: An Introduction To The Workshop Sandbox Environment (Optional)</b></p>
 
 > Depending on time, this exercise may be ommitted from your course, but you can follow the procedures here to set up a SQL Server big data cluster. If you completed the pre-requisites, you will already have this environment and will not need to repeat the steps here. In the final modules of this course, your instructor team will demonstrate a full big data cluster environment for you, and point you to a larger set of instructions to install and work with that system, since the focus of this course is heavier in the Kubernetes concepts. 
 
@@ -443,7 +443,7 @@ The config file specifies Clusters, users and contexts. A context is a label for
 
 The [Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-Cluster/configure-access-multiple-Clusters/) explains the creation of config files and contexts for accessing multiple Clusters. The fastest and simplest way to create a config file is to copy the file `/etc/kubernetes/admin.conf` from one of the master Node hosts to the client machine that `kubectl` is installed on.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Kubectl Familiarization</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Kubectl Familiarization</b></p>
 
 Its time to work with the `kubectl` utility,  the primary command line tool for managing and administering Kubernetes Clusters. Use the [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) for assistance with this activity.
 
@@ -459,7 +459,7 @@ Its time to work with the `kubectl` utility,  the primary command line tool for 
 
 ## 3.2.5.2 Dashboard ## 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Deploying The Kubernetes Dashboard</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Deploying The Kubernetes Dashboard</b></p>
 
 In this activity, the Kubernetes dashboard will be deployed to your sandbox Kubernetes cluster and accessed from a web browser running on your laptop.
 
@@ -517,7 +517,7 @@ The deployment of applications often comes with the following requirements:
 
 Kubernetes solves this problem via [Helm](https://helm.sh/). Helm packages are defined in what are called `Charts`, and charts in turn are stored in chart repositories. Whilst Helm is not required for deploying a SQL Server 2019 big data Cluster, the chances are that there are supporting objects in the rest of your Kubernetes eco-system that require the use of Helm.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Using Helm</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Using Helm</b></p>
 In this activity we will deploy a storage plugin using Helm, this activity will demonstrate:
 
 - How to add a repository to your chart "Search space".
@@ -537,7 +537,7 @@ The OpenShift Container Platform is a 100% Kubernetes compatible Platform-As-A-S
 
 ## 3.3.1 The Requirement For Commercially Supported Distributions of Kubernetes ##
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Understanding what open-source means</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Understanding what open-source means</b></p>
 
 <p><img style="margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkmark.png?raw=true"><b>Steps</b></p>
 
@@ -732,7 +732,7 @@ Things become more nuanced once state is involved. When a Pod that is stateful i
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/k8stobdc/graphics/3_3_4_stateful_shared.PNG?raw=true">
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Investigate The Storage Objects Associated With Your Workshop Cluster</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Investigate The Storage Objects Associated With Your Workshop Cluster</b></p>
 
 In this activity we will look at the different storage objects associated with your sandbox environment.
  
@@ -787,7 +787,7 @@ volumeClaimTemplates:
           storage: 1Gi
 ```		  
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Working With Statefulsets</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Working With Statefulsets</b></p>
 
 1. List the statefulsets present on your sandbox Kubernetes Cluster:
 
@@ -820,7 +820,7 @@ There are a few constraints you should consider for your storage choices. They i
 
 Your requirements should include these considerations along with other factors unique to your use-case.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Utilizing Kubernetes Persistent Storage Volumes</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Utilizing Kubernetes Persistent Storage Volumes</b></p>
 
 In this activity you will explore more on the Persistent Storage Classes you created in Module 2. 
 
@@ -877,7 +877,7 @@ For a Storage Class that provides automatic provisioning, the Persistent Volume 
 
 Key to managing sensitive information such as passwords is the Kubernetes `Secret` Object. Secrets encrypt information which is stored in `etcd`, at the time when a secret is required it is injected into a Pod(s) are made available via a temporary file system.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Working With Secrets</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Working With Secrets</b></p>
 
 In this activity we will look at what Secret objects come with a big data Cluster and create a secret.
 

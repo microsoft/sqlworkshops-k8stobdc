@@ -1,4 +1,4 @@
-![](https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/microsoftlogo.png?raw=true)
+![](https://github.com/microsoft/sqlworkshops/blob/master/graphics/microsoftlogo.png?raw=true)
 
 # Workshop: Kubernetes - From Bare Metal to SQL Server Big Data Clusters
 
@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/textbubble.png?raw=true"> <h2>00 prerequisites</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"> <h2>00 prerequisites</h2>
 
 This workshop is taught using various components, which you will install and configure in the sections that follow. 
 
@@ -28,42 +28,42 @@ Whether you use the provided classroom system, the Microsoft Azure Virtual Machi
 
 *Note that all following activities must be completed prior to class - there will not be time to perform these operations during the workshop.*
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity 1: Set up a Microsoft Azure Account</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity 1: Set up a Microsoft Azure Account</b></p>
 
 You have multiple options for setting up Microsoft Azure account to complete this workshop. You can use a Microsoft Developer Network (MSDN) account, a personal or corporate account, or in some cases a pass may be provided by the instructor. (Note: for most classes, the MSDN account is best)
 
 **If you are attending this course in-person:**
 Unless you are explicitly told you will be provided an account by the instructor in the invitation to this workshop, you must have your Microsoft Azure account and  Virtual Machine set up before you arrive at class. There will NOT be time to configure these resources during the course.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Option 1 - Microsoft Developer Network Account (MSDN) Account</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Option 1 - Microsoft Developer Network Account (MSDN) Account</b></p>
 
 The best way to take this workshop is to use your [Microsoft Developer Network (MSDN) benefits if you have a subscription](https://azure.microsoft.com/en-us/pricing/member-offers/visual-studio-subscriptions/).
 
 - [Open this resource and click the "Activate your monthly Azure credit" button](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers/)
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Option 2 - Use Your Own Account</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Option 2 - Use Your Own Account</b></p>
 
 You can also use your own account or one provided to you by your organization, but you must be able to create a resource group and create, start, and manage a Virtual Machine and an Azure Virtual Machine. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Option 3 - Use an account provided by your instructor</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Option 3 - Use an account provided by your instructor</b></p>
 
 Your workshop invitation may have instructed you that they will provide a Microsoft Azure account for you to use. If so, you will receive instructions that it will be provided.
 
 **Unless you received explicit instructions in your workshop invitations, you must create either an MSDN or Personal Microsoft Azure account. You must have an account prior to the workshop. No Microsoft Azure assets will be provided the day of class unless instructed otherwise.**
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity 2: Prepare Your Workstation</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity 2: Prepare Your Workstation</b></p>
 
 You will need to install the Azure Command Line utility to run the rest of these commands, and at the end of the course you will need the Microsoft Azure Data Studio tool to access the SQL Server Big Data Cluster.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Install The Microsoft Azure Command Line Utility</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Install The Microsoft Azure Command Line Utility</b></p>
 
 [Open this reference in another browser tab, and follow the instructions you find there.](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Install The Microsoft Azure Data Studio</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Install The Microsoft Azure Data Studio</b></p>
 
 [Open this reference in another browser tab, and follow the instructions you find there.](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity 3: Prepare The Virtual Machine on Azure</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity 3: Prepare The Virtual Machine on Azure</b></p>
 
 These instructions create a Single-Node Kubernetes Cluster on an Azure Virtual Machine *(Unsupported for production - classroom use only)*.
 
@@ -83,11 +83,11 @@ You can copy-and-paste the lines that follow to run the commands, or you can set
 
 In other IDE systems you can configure the current line to run in a terminal, or simply perform all of these commands from a Terminal window.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Step 1: Log in to Azure</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Step 1: Log in to Azure</b></p>
 
 <pre>az login</pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Step 2: Set your account</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Step 2: Set your account</b></p>
 
 Show the accounts:
 
@@ -97,7 +97,7 @@ Replace **YourAccountNameHere** (leave the quotes in place) with your account na
 
 <pre>az account set --subscription "YourAccountNameHere"</pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Step 3: Create a Resource Group, and a Virtual Machine</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Step 3: Create a Resource Group, and a Virtual Machine</b></p>
 
 >Note: You'll needs a machine large enough to run BDC and also have Nested Virtualization. The script steps that follow take care of that for you. 
 
@@ -117,7 +117,7 @@ The last set of commands will return an IP address. Replace the value **ReplaceW
 
 <pre>ssh -X bdcadmin@ReplaceWithIPAddressThatReturnsFromLastCommand</pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Step 4: Update and Upgrade Ubuntu</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Step 4: Update and Upgrade Ubuntu</b></p>
 
 Once connected, you'll need to update the Linux Environment.
 
@@ -129,7 +129,7 @@ sudo apt-get upgrade
 sudo apt autoremove
 </pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity 4: Install BDC Single Node - Pre-requisites (Current as of 1/31/2020)</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity 4: Install BDC Single Node - Pre-requisites (Current as of 1/31/2020)</b></p>
 
 Now you're ready to install Docker, Kubernetes, and all of the components for a SQL Server Big Data Cluster. You should still be in the Secure Shell environment - if not, run this command again using the proper IP address. Replace the value **ReplaceWithIPAddressThatReturnsFromLastCommand** with that number.
 
@@ -137,7 +137,7 @@ Now you're ready to install Docker, Kubernetes, and all of the components for a 
 
 <pre>ssh -X bdcadmin@ReplaceWithIPAddressThatReturnsFromLastCommand</pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Step 5: Download and mark the BDC Setup script for Execution</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Step 5: Download and mark the BDC Setup script for Execution</b></p>
 
 In  this step you'll pull down the complete SQL Server Big Data Cluster Single-Node script. This will install Docker, Kubernetes, and all of SQL Server. This will take anywhere from 15-30 minutes. 
 
@@ -149,7 +149,7 @@ chmod +x setup-bdc.sh
 sudo ./setup-bdc.sh
 </pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><b>Step 6: Set the tools path and Check Installation</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><b>Step 6: Set the tools path and Check Installation</b></p>
 
 In this final step you'll set the Linux path so that the tools run properly, and then check to make sure everything is up.
 
@@ -169,7 +169,7 @@ Next, run the following command to de-allocate the machine safely so that you ar
 
 <pre>az vm deallocate --name ReplaceWithVMName</pre>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity 5: After Class Cleanup - Erase everything</b></p> 
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity 5: After Class Cleanup - Erase everything</b></p> 
 
 When the class is complete, you can remove your environment so that you are no longer charged for it. The following commands will do that for you. 
 

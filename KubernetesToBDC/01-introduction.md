@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/textbubble.png?raw=true"> 01 - An introduction to Linux, Storage, Containers and Kubernetes </h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"> 01 - An introduction to Linux, Storage, Containers and Kubernetes </h2>
 
 In this workshop you'll cover using a Process and various Platform components to create a Big Data Cluster for SQL Server solution using Kubernetes that you can deploy on premises, in the cloud, or in a hybrid architecture. In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic. There's a lot here - so focus on understanding the overall system first, then come back and explore each section.
 
@@ -116,17 +116,17 @@ The essential commands you should know for this workshop are listed below, with 
 
 A <a href="https://opensourceforu.com/2016/07/introduction-linux-system-administration/" target="_blank">longer explanation of system administration for Linux is here</a>.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Work with Linux Commands</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Work with Linux Commands</b></p>
 
 <p><b>Steps</b></p>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/buildroot-x86.cfg" target="_blank">Open this link to run a Linux Emulator in a browser</a></p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Find the mounted file systems, and then show the free space in them.</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Show the current directory.</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Show the files in the current directory. </p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Create a new directory, navigate to it, and create a file called <i>test.txt</i> with the words <i>This is a test</i> in it. (hint: us the <b>nano</b> editor or the <b>echo</b> command)</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Display the contents of that file.</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true">Show the help for the <b>cat</b> command.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/buildroot-x86.cfg" target="_blank">Open this link to run a Linux Emulator in a browser</a></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Find the mounted file systems, and then show the free space in them.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Show the current directory.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Show the files in the current directory. </p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Create a new directory, navigate to it, and create a file called <i>test.txt</i> with the words <i>This is a test</i> in it. (hint: us the <b>nano</b> editor or the <b>echo</b> command)</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Display the contents of that file.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true">Show the help for the <b>cat</b> command.</p>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -192,12 +192,12 @@ In SQL Server Big Data Clusters, the Container Orchestration system (Such as Kub
 
 All of this orchestration is controlled by another set of text files, called "Manifests", which you will learn more about in the Modules that follow. You declare the state of the layout, networking, storage, redundancy and more in these files, load them to the Kubernetes environment, and it is responsible for instantiating and maintaining a Cluster with that configuration. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Familiarize Yourself with Container Orchestration using minikube</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Familiarize Yourself with Container Orchestration using minikube</b></p>
 
 To practice with Kubernetes, you will use an online emulator to work with the `minikube` platform. This is a small Virtual Machine with a single Node acting as a full Cluster. 
 
 <p><b>Steps</b></p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/ 
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/ 
 " target="_blank">Open this resource, and complete the first module</a>. (You can return to it later to complete all exercises if you wish)</p>
 
 <br>
@@ -257,16 +257,16 @@ You can <a href="https://docs.microsoft.com/en-us/sql/azure-data-studio/what-is?
 You'll explore further operations with the Azure Data Studio in the final module of this course.
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Practice with Notebooks</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Practice with Notebooks</b></p>
 
 <p><b>Steps</b></p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://notebooks.azure.com/BuckWoodyNoteBooks/projects/AzureNotebooks" target="_blank">Open this reference, and review the instructions you see there</a>. You can clone this Notebook to work with it later.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://notebooks.azure.com/BuckWoodyNoteBooks/projects/AzureNotebooks" target="_blank">Open this reference, and review the instructions you see there</a>. You can clone this Notebook to work with it later.</p>
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Azure Data Studio Notebooks Overview</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Azure Data Studio Notebooks Overview</b></p>
 
 <p><b>Steps</b></p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/azure-data-studio/sql-notebooks?view=sql-server-2017" target="_blank">Open this reference, and read the tutorial - you do not have to follow the steps, but you can if time permits.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/azure-data-studio/sql-notebooks?view=sql-server-2017" target="_blank">Open this reference, and read the tutorial - you do not have to follow the steps, but you can if time permits.</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>

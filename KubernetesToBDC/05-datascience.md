@@ -6,7 +6,7 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/textbubble.png?raw=true"> 05 - Using the SQL Server big data cluster on Kubernetes for Data Science </h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/textbubble.png?raw=true"> 05 - Using the SQL Server big data cluster on Kubernetes for Data Science </h2>
 
 In this workshop you have covered concepts and processes for using Kubernetes, and how to set up a SQL Server big data cluster on a Kubernetes Cluster. The end of this Module contains several helpful references you can use in these exercises and in production.
 
@@ -65,15 +65,15 @@ Using the Data Virtualization capability you saw in the <i>02 - SQL Server BDC C
 
 This process allows not only a query to disparate systems, but also those remote systems can hold extremely large sets of data. Normally you are querying a subset of that data, so the results are all that are sent back over the network. These results can be joined with internal tables for a single view, and all from within the same Transact-SQL statements. 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Load and query data in an External Table</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Load and query data in an External Table</b></p>
 
 In this activity, you will load the sample data into your big data cluster environment, and then create and use an External table to query the data in HDFS. This process is similar to connecting to any PolyBase target.
 
 <b>Steps</b>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-load-sample-data?view=sqlallproducts-allversions" target="_blank">Open this reference, and perform all of the instructions you see there</a>. This loads your data in preparation for the next Activity.</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sqlallproducts-allversions" target="_blank">Open this reference, and perform all of the instructions you see there</a>. This step shows you how to create and query an External table.</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-oracle?view=sqlallproducts-allversions" target="_blank">(Optional) Open this reference, and review the instructions you see there</a>. (You You must have an Oracle server that your BDC can reach to perform these steps, although you can review them if you do not)</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-load-sample-data?view=sqlallproducts-allversions" target="_blank">Open this reference, and perform all of the instructions you see there</a>. This loads your data in preparation for the next Activity.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sqlallproducts-allversions" target="_blank">Open this reference, and perform all of the instructions you see there</a>. This step shows you how to create and query an External table.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-oracle?view=sqlallproducts-allversions" target="_blank">(Optional) Open this reference, and review the instructions you see there</a>. (You You must have an Oracle server that your BDC can reach to perform these steps, although you can review them if you do not)</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -89,13 +89,13 @@ Ad-hoc queries are very useful for many scenarios. There are times when you woul
 
 Using the Data Virtualization capability you saw in the <i>02 - BDC Components</i> Module, the IT team creates External Tables using PolyBase statements. These External Table definitions are stored in the database on the SQL Server Master Instance within the cluster. When queried by the user, the queries are engaged from the SQL Server Master Instance through the Compute Pool in the SQL Server BDC, which holds Kubernetes Nodes containing the Pods running SQL Server Instances. These Instances send the query to the PolyBase Connector at the target data system, which processes the query based on the type of target system. The results are processed and returned through the PolyBase Connector to the Compute Pool and then on to the Master Instance, and the PolyBase statements can specify the target of the Data Pool. The SQL Server Instances in the Data Pool store the data in a distributed fashion across multiple databases, called <i>Shards</i>.
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Load and query data into the Data Pool</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Load and query data into the Data Pool</b></p>
 
 In this activity, you will load the sample data into your big data cluster environment, and then create and use an External table to load data into the Data Pool.
 
 <b>Steps</b>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-sql?view=sqlallproducts-allversions" target="_blank">Open this reference, and perform the instructions you see there</a>. This loads data into the Data Pool.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-sql?view=sqlallproducts-allversions" target="_blank">Open this reference, and perform the instructions you see there</a>. This loads data into the Data Pool.</p>
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <br>
@@ -114,15 +114,15 @@ The Data Scientist has another option to create and train ML and AI models. The 
 
 
 <br>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/point1.png?raw=true"><b>Activity: Load data with Spark, run a Spark Notebook</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/point1.png?raw=true"><b>Activity: Load data with Spark, run a Spark Notebook</b></p>
 <br>
 
 In this activity, you will load the sample data into your big data cluster environment using Spark, and use a Notebook in Azure Data Studio to work with it.
 
 <b>Steps</b>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-spark?view=sqlallproducts-allversions" target="_blank">Open this reference, and follow the instructions you see there</a>. This loads the data in preparation for the Notebook operations.</p>
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-notebook-spark?view=sqlallproducts-allversions" target="_blank">Open this reference, and follow the instructions you see there</a>. This simple example shows you how to work with the data you ingested into the Storage Pool using Spark.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-spark?view=sqlallproducts-allversions" target="_blank">Open this reference, and follow the instructions you see there</a>. This loads the data in preparation for the Notebook operations.</p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/checkbox.png?raw=true"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-notebook-spark?view=sqlallproducts-allversions" target="_blank">Open this reference, and follow the instructions you see there</a>. This simple example shows you how to work with the data you ingested into the Storage Pool using Spark.</p>
 
 <br>
 <p style="border-bottom: 1px solid lightgrey;"></p>
