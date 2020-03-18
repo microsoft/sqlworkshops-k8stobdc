@@ -19,7 +19,7 @@ This module covers a complete workflow for this environment, focusing on a Data 
  <a href="https://azure-scenarios-experience.azurewebsites.net/big-data.html" target="_blank">Wide World Importers </a> (WWI) is a traditional brick and mortar business with a long track record of success, generating profits through strong retail store sales of their unique offering of affordable products from around the world. They have a traditional N-tier application that uses a front-end (mobile, web and installed) that interacts with a scale-out middle-tier software product, which in turn stores data in a large SQL Server database that has been scaled-up to meet demand.  
 
 <br>
-<img style="height: 150; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/graphics/WWI-002.png?raw=true">
+<img style="height: 150; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops/blob/master/graphics/WWI-002.png?raw=true">
 <br>
 
 WWI has now added web and mobile commerce to their platform, which has generated a significant amount of additional data, and data formats. These new platforms were added without integrating into the OLTP system data or Business Intelligence infrastructures. As a result, "silos" of data stores have developed, and ingesting all of this data exceeds the scale of their current RDBMS server:
