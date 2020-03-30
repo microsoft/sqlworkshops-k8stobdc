@@ -16,7 +16,7 @@ You'll start by understanding Containers and Kubernetes, moving on to a discussi
 
 > NOTE: This course is designed to be taught in-person with hardware or virtual environments provided by the instructional team. You will also get details for setting up your own hardware, virtual or Cloud environments for Kubernetes for a workshop backup or if you are not attending in-person. 
 
-This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution.
+This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
 (You can view all of the [source files for this workshop on this github site, along with other workshops as well. Open this link in a new tab to find out more.](https://github.com/microsoft/sqlworkshops-k8stobdc))
 
