@@ -30,7 +30,7 @@ Each of these functions are available separately based on the requirements of yo
 In both a Stand-Alone Instance configuration and within the BDC (BDC) configuration, you can use a series of *Connectors* to query data using the <a href="https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-ver15" target="_blank"><i>PolyBase</i></a> feature. PolyBase enables your SQL Server instance to process Transact-SQL queries that read data from external data sources. Starting in SQL Server 2019, you can access external data in Hadoop, Azure Blob Storage and also external data in SQL Server, Oracle, Teradata, and MongoDB. PolyBase pushes as much of the query predicate as possible to the source system, which optimizes the query.
 
 <br>
-<img style="height: 300; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/sqlserver2019bigdataclusters/graphics/datavirtualization1.png?raw=true">
+<img style="height: 300; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://raw.githubusercontent.com/microsoft/sqlworkshops-bdc/master/graphics/datavirtualization1.png">
 <br>
 
 To leverage PolyBase, you first define the external table using a specific set of statements, then configure the connection and security, and then use standard Transact-SQL statements work with the data as if it were an standard SQL Server table. The components used in this configuration are as Follows:
@@ -61,7 +61,7 @@ In this section you will review a solution tutorial similar to one you will perf
 The Big Data capabilities for SQL Server can be used in a stand-alone Instance by leveraging the Data Virtualization feature described above. To perform scale-out Big Data, SQL Server implements a big data cluster by leveraging Kubernetes with several other components. 
 
 <br>
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/sqlserver2019bigdataclusters/graphics/bdc.png?raw=true">
+<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://raw.githubusercontent.com/microsoft/sqlworkshops-bdc/master/graphics/bdc.png">
 <br>
 
 The BDC can be deployed to three environments:
@@ -161,7 +161,7 @@ These components are used in the Compute Pool of the BDC:
 The Data Pool in a BDC consists of one or more SQL Server data pool instances. SQL data pool instances provide persistent SQL Server storage for the cluster. A data pool is used to ingest data from SQL queries or Spark jobs, or other locations. To provide better performance across large data sets, data in a data pool is distributed into shards across the member SQL data pool instances.
 
 <br>
-<img style="height: 200; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/sqlserver2019bigdataclusters/graphics/datamart1.png?raw=true">
+<img style="height: 200; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://raw.githubusercontent.com/microsoft/sqlworkshops-bdc/master/graphics/datamart1.png">
 <br>
 
 These components are used in the Data Pool of the BDC:
