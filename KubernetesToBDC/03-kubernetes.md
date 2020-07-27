@@ -938,7 +938,7 @@ Each of these are guided by the `etcd` concept, and must be backed up for securi
 - **etcdctl:** Allows snapshots of etcd to be taken, restoring a etcd Cluster involves a new instance of the Cluster being created which incurrs downtime.
 - **[VMware Velero](https://github.com/vmware-tanzu/velero)** (formally Heptio Ark): Integrates with 3rd party storage APIs in order to backup the entire state of a Kubernetes Cluster.
 
-## 3.8 Kubernetes Best Practices
+## 3.9 Kubernetes Best Practices
 
 Now that many of the most important Kubernetes concepts have been covered, what exactly does a Kubernetes Cluster that is fit for production puproses look like ?, the simple answer is that a production grade Cluster should adhere to many of the following points:
 
@@ -957,15 +957,15 @@ Now that many of the most important Kubernetes concepts have been covered, what 
 kubectl api-versions | grep rbac
 ```
 
-## 3.9 Troubleshooting
+## 4.0 Troubleshooting
 
 Troubleshooting a SQL Server 2019 big data Cluster, and in fact any application that runs on a Kubernetes Cluster falls into two broad categories.
 
-### 3.9.1 Kubernetes Cluster Infrastructure Troubleshooting ###
+### 4.0.1 Kubernetes Cluster Infrastructure Troubleshooting ###
 
 This relates to the actual infrastructure that the big data Cluster runs on.
 
-### 3.9.1.1 Persistent Volume Storage ###
+### 4.0.1.1 Persistent Volume Storage ###
 
 Some generic steps to consider when troubleshooting a Kubernetes storage plugin include:
 
@@ -1000,27 +1000,27 @@ docker rmi $(docker images | grep CU1 | tr -s ' ' | cut -d ' ' -f 3)
 
 ### 3.9.2 SQL Server 2019 Big Data Cluster Application Troubleshooting 
 
-This relates to the deployment and running of the actual SQL Server 2019 big data Cluster as an application.
+This relates to the deployment and running of the actual SQL Server 2019 big data cluster as an application.
 
 ### 3.9.2.1 Big Data Cluster Deployment
 
 #### 3.9.2.1.1 Observing A Deployment By Monitoring Object Creation
 
-A SQL Server 2019 big data Cluster is bootstrapped through a controller Pod, this in turn creates all the other Pods in the Cluster. To begin with the big data Cluster
+A SQL Server 2019 big data cluster is bootstrapped through a controller Pod, this in turn creates all the other Pods in the cluster. To begin with the big data cluster
 control plane will be created, followed by the data plane.
 
-View the big data Cluster Pods as they are created using this command:
+View the big data cluster Pods as they are created using this command:
 
 ```
-kubectl get Pods -n mssql-Cluster
+kubectl get pods -n mssql-cluster
 ```
 
-The initial state of a Pod is *pending*. If a Node in a Kubernetes Cluster has never participated in a big data Cluster deployment, or a new version of a big data Cluster is deployed, most of the time that a Pod spends in a state of pending will involve images being pulled from Microsoft's registry.
+The initial state of a Pod is *pending*. If a Node in a Kubernetes Cluster has never participated in a big data Cluster deployment, or a new version of a big data cluster is deployed, most of the time that a Pod spends in a state of pending will involve images being pulled from Microsoft's registry.
 
 Whilst in a state of pending, the activity a Pod is currently performing can be viewed with: 
 
 ```
-kubectl describe Pod -n mssql-Cluster -o wide
+kubectl describe Pod -n mssql-cluster -o wide
 ```
 The *events* section in the output from this command contains information relating to what the Pod is currently doing. 
 
@@ -1031,13 +1031,13 @@ The deployment process is orchestrated by a single Pod; named `control-XXXXX` (w
 1. Obtain the name of the controller Pod:
 
 ```
-kubectl get po -n <Cluster-namespace>
+kubectl get po -n <cluster-namespace>
 ```
 
 2. Shell into the controller container:
 
 ```
-kubectl exec -it control-znvkt -n mssql-Cluster -- /bin/bash
+kubectl exec -it control-znvkt -n mssql-cluster -- /bin/bash
 ```
 
 3. Change directory to the controller log directory:
@@ -1062,7 +1062,7 @@ tail -f controller.log
 
 Issue:
 ```
-kubectl get all -n mssql-Cluster
+kubectl get all -n mssql-cluster
 ```
 
 In the output returned by this command, check that:
@@ -1071,10 +1071,10 @@ In the output returned by this command, check that:
 - The desired and current number of Pods for each `ReplicaSet` should match
 - The desired and current number of Pods for each `StatefulSet` should match
 
-The status of each Persistent Volume Claim associated with the big Cluster namespace should be bound, verify this by running the following command:
+The status of each Persistent Volume Claim associated with the big cluster namespace should be bound, verify this by running the following command:
 
 ```
-kubectl get pvc -n mssql-Cluster
+kubectl get pvc -n mssql-cluster
 ```
 
 Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-k8stobdc/blob/master/KubernetesToBDC/04-bdc.md" target="_blank"><i> Module 4 - SQL Server big data clusters</i></a>.
